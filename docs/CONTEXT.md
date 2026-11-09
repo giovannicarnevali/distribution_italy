@@ -1,0 +1,100 @@
+# CONTEXT — conoscenza stabile del progetto
+
+Da leggere per intero prima di qualunque intervento sul paper. Contiene ciò che non cambia da una sessione all'altra: tesi, struttura, risultati con i numeri, fonti, convenzioni, decisioni chiuse. Lo stato corrente e i pendenti sono in `HANDOFF.md`; i ruoli degli LLM in `COLLABORATION.md`.
+
+## 1. Il lavoro
+
+- **Autore unico**: Giovanni Battista Carnevali. Economista; co-autore di *Tornare alla pianificazione. Politiche industriali dopo la globalizzazione* (Carnevali, Cucignatto, Esposito, Gaddi, Garbellini, Halevi, Lampa, Oro, Polidori; Punto Rosso 2025), da cui il paper riprende la critica cambridgiana alla funzione di produzione (cap. 1 Gaddi-Garbellini-Oro; cap. 11 Halevi).
+- **Titolo**: *Le lotte di classe in Italia. Fasi del declino italiano 1980–2024*. Lingua: italiano (abstract anche in inglese).
+- **Natura**: working paper, lettura storica quantitativa fondata sulla **convergenza di metodi multipli** (triangolazione), non dimostrazione causale univoca. Questo framing è una scelta deliberata e va difeso, non "rafforzato" con pretese causali.
+- **Stato**: in peer review simulata (ChatGPT, Kimi, DeepSeek), verdetto "Accept with minor revisions"; destinazione da decidere (Stato e Mercato, IEJ, Moneta e Credito, collana working paper).
+
+## 2. Tesi
+
+Il declino italiano è una sequenza di **tre regimi di conflitto distributivo**, mediati da istituzioni salariali, vincoli macroeconomici e finanziarizzazione:
+
+1. **1970–1979, profit squeeze fordista**: piena occupazione e forza sindacale; ω (quota salari aggiustata) sale fino al 67%, r (saggio di profitto lordo aggiustato) crolla. Meccanismo Goodwin attivo.
+2. **1980–1992, compromesso al ribasso** (fasi 2-3 del paper): recupero dei profitti via leve eterodosse — svalutazioni nello SME, disavanzo pubblico (per tre quarti interessi sul debito), imprese pubbliche. Stallo del conflitto redistributivo che prelude alla rotta del 1992. 1979-80 è break politico-sindacale (fine dell'area di governo PCI, ingresso nello SME, marcia dei 40.000).
+3. **1992–2007, restaurazione istituzionale**: fine della scala mobile (protocollo 31 luglio 1992), Ciampi-Giugni (23 luglio 1993, nuovo assetto contrattuale), Maastricht (firmato 1992, in vigore 1° novembre 1993), privatizzazioni. Compressione salariale strutturale, recupero di r **non reinvestito**: quasi-rendite (Modiano-Onado 2023; Torrini 2005, 2016), meccanismo Goodwin spento, crescita labour-intensive, produttività ferma.
+4. **2008–2024, finanziarizzazione ed export-led 2.0**: crisi 2008-13 e cura Monti ammazzano la domanda interna; dal 2014 S>I, corporate saving glut, surplus estero (mai oltre due punti di PIL), recuperi ciclici di ω ma r in caduta per insufficiente reinvestimento. Pattern Luxemburg.
+
+Fil rouge interpretativo (parole dell'autore): meccanismo fordista → piena occupazione e lotte → crisi di accumulazione; compromesso keynesiano al ribasso anni Ottanta; break 1992 (il deficit fa saltare la lira nella banda larga, salta la scala mobile, salta il compromesso); nuovo regime 1994-2007 in cui i profitti si mangiano i salari ma non vengono reinvestiti in crescita bensì in quasi-rendite; 2008-19 crisi dei debiti sovrani, Monti, export-led.
+
+Riferimenti teorici: Marx, Goodwin (1967), Sylos Labini (1972, 1984, 1993), Aglietta e la regolazione, Godley (saldi settoriali), Graziani (cornice storica, §1.1bis), Bellofiore, Kalecki (equazione dei profitti), Luxemburg (realizzazione esterna), Bhaduri-Marglin 1990 e Stockhammer 2004 (profitti senza investimenti), Pasinetti / Felipe-McCombie / Shaikh (critica della funzione di produzione). Arrighi: solo lente storico-narrativa in §8.2-8.4, fuori dalla bibliografia come meccanismo.
+
+## 3. Struttura del paper (v22)
+
+Abstract IT/EN · 1 Introduzione e tesi (1.1 cinque fasi; 1.1bis Graziani; 1.2 paradigmi; 1.3 domande; 1.4 struttura) · 2 Dati e metodi (2.1 fonti; 2.2 variabili; 2.3 metodi) · 3 Fase 1 1970-79 (3.4 robustezza di r a definizioni alternative) · 4 Fase 2 1980-87 (4.2bis R&D, produttività e distribuzione: perché non usiamo la TFP; 4.3 equazione dei profitti di Kalecki) · 5 Fase 3 1987-92 e regime change (5.2 break 1992-94; 5.3 pivot in prospettiva comparata; 5.4 puzzle di politica economica; 5.5 Bai-Perron e Chow narrativi, controllo IRAP; 5.7 non-stazionarietà, cointegrazione, differenze) · 5bis Lock-in nella specializzazione (Di Martino-Vasta; World Bank high-tech export) · 6 Fase 4 1995-2007 (6.3 puzzle della produttività; 6.3.1 equazione di Sylos Labini) · 6bis Privatizzazioni, quota salari e quasi-rendite (6bis.2 DiD TWFE; 6bis.3 Eurostat reali; 6bis.5 Callaway-Sant'Anna; 6bis.6 riformulazione quasi-rendite) · 7 Crisi 2008-14 e fase 5 2014-24 (7.3 pattern Luxemburg) · 8 Sintesi: tre regimi (8.1 Goodwin come lente; 8.5 contro-evidenze; 8.6 SCM Maastricht; 8.6.1 donor pool con Grecia) · 9 Limiti, robustezza (tabella 9.2 "rivedibilità dei risultati"), ricerca futura · A.6 VECM (r, ω) esplorativo · A.7 regressione cross-country R&D–TFP (solo per confronto) · Bibliografia · Appendice metodologica A.1-A.5.
+
+## 4. Variabili (AMECO, Italia)
+
+- ω = ALCD0/100 (quota salari aggiustata per gli autonomi; l'Italia ha ~23% di autonomi vs 14% UE, l'aggiustamento è sostanziale).
+- r = UQGD / (K_corrente + UWCD), K_corrente = OKND × PIGT/100. Varianti: r′, r_NETTO = UQND/(K+UWCD), r_NETTO_strict = UQND/K, r_gross (non aggiustato: la correlazione con ω non regge).
+- q = K_corrente/UWCD; I/K = UIGT/K_corrente; LP = OVGD/NETD; REER XUNRQ; ULC reale QLCD; CA/Y = UBCA/UVGD; X/Y = UXGS/UVGD.
+- Saldi settoriali Cripps-Godley da Eurostat nasa_10_nf_tr (B9 per S11+S12+S14+S15, S13, S1), 1995-2024.
+- Kalecki: P − T_π = I + D + (X−M) + C_π − S_w, con D = net borrowing delle AP (OCSE EO NLGQ/NLGXQ 1970-94 innestato su AMECO UBLG/UBLGI dal 1995), T_π = OCSE TYB (in euro, dividere per 1e9), risparmio netto famiglie OCSE SRATIO. Identità PIL = UWCD+UOGD+UTVN esatta dal 1995, entro 1 pp dal 1970; anni Sessanta esclusi.
+- Identità TFP: Y a costo dei fattori = (UVGD − UTVN)/PVGD; ω aggiustata al costo dei fattori; w = ω·Y/L, r = (1−ω)·Y/K; residuo di Solow con pesi Törnqvist; scarto numerico massimo 2,9e-5.
+- Sylos Labini: g_LP = a + b·g_Y + c·(ŵ − p̂_I)₋₁, con ŵ = crescita UWCD/NWTD, p̂_I = crescita PIGT; OLS HAC(3); elasticità occupazione/prodotto = 1 − b, riportata per rispondere a Rowthorn (1975).
+
+## 5. Risultati principali (numeri da preservare)
+
+| Risultato | Valore |
+|---|---|
+| Break ω 1992-93 (Chow narrativo) | F = 27, sopravvive Holm-Bonferroni |
+| Chow narrativi HAC Newey-West + Holm | **13 su 24** significativi (versione standard preliminare: 11/21) — 13/24 è la cifra canonica |
+| Bai-Perron strucchange su ω | 1970, 1983, 1997, 2008; il terzo → **1994** correggendo approssimativamente la riclassificazione IRAP 1998 (δ = 2,25/2,34/3,15 pp, robusto nelle tre varianti; BIC non confrontabile tra serie diverse) |
+| ρ(r, ω) 1992-2024 | −0,545 [−0,714; −0,366]; r_NETTO −0,276 [−0,524; −0,067]; r_gross −0,205 (IC include 0) |
+| Δr = α + β·Δω (HAC) | β = −0,30 (1992-2024, p<0,001); −0,34 (1961-2024); ρ(Δr,Δω) = −0,74 |
+| Non-stazionarietà | r, ω, I/K, REER compatibili con I(1); r borderline I(0)/I(1) (ADF p=0,057, KPSS non rigetta) — trattato a parte; cointegrazione r-ω non univoca (Phillips-Ouliaris non rigetta; Johansen ambiguo trace vs max-eigen) |
+| SCM Maastricht su ω | gap medio post-1992 −3,51 pp; in-space placebo p = 0,125; leave-one-out [−3,89; −3,26]; "divergenza nel regime di convergenza post-1992", suggestivo non conclusivo |
+| SCM donor pool con Grecia (§8.6.1) | gap −3,4 — **numero stimato, dichiarato provvisorio** |
+| DiD privatizzazioni, TWFE | −16,54 pp (wild cluster bootstrap p=0,022); staggered −14,97 pp |
+| DiD Callaway-Sant'Anna, dati Eurostat reali | ATT +0,023 [+0,003; +0,043], segno opposto, pre-trend non piatti → **effetto non identificato**, declassato a evidenza descrittiva |
+| Kalecki | investimento privato/surplus operativo lordo 0,48 (anni Settanta) → 0,34 (post-1993); risparmio netto famiglie 22% → 11% → 4%; fonte esterna di realizzazione: deficit pubblico anni Ottanta, riduzione del risparmio delle famiglie dal 1993, estero dal 2014 |
+| Identità TFP (medie annue %) | 1970-79: 2,36 = 2,51 + (−0,16) [ŵ 3,63; r̂ −0,50; ω 69,4] · 1980-92: 0,47 = 0,48 − 0,01 · **1993-2007: 0,10 = 0,00 + 0,10** [ŵ 0,00; r̂ 0,27] · 2008-13: −1,30 = −0,32 − 0,98 · 2014-24: 0,46 = −0,16 + 0,62 [ŵ −0,27; r̂ 1,55] · 1996-2019: −0,31 (PWT: −0,63) |
+| LP reale (medie annue %) | 1970-79 3,1; 1980-89 1,8; 1993-2007 0,8; 2008-24 0,1. LP nominale per occupato 1993-2007 +3,7 (deflatore 2,9) |
+| Sylos Labini | 1961-2024 (n=63): b_Y 0,84 (0,04), Ricardo +0,149 (0,041) p<0,001, elast. occ. 0,16, R² 0,88 · 1961-92: 0,93, **+0,126 p<0,001**, 0,07 · 1993-2024: 0,745, −0,067 p=0,47, **0,255** · 1993-2007 (n=15): 0,57, +0,178 p=0,054, 0,43, R² 0,24. Medie (ŵ−p̂_I): 2,0 / 1,1 / 0,3 / −0,5 / 0,2 |
+| R&D e specializzazione | R&D/PIL fermo ~1% dal 1980; high-tech export 8,1% del manifatturiero 2015-22 (World Bank, SITC), più basso tra i paesi OCSE avanzati, sotto la Spagna |
+
+Lettura: la "stagnazione della TFP" post-1993 è la stagnazione del salario reale per identità; il recupero post-2014 è solo r̂. Dopo il 1992 l'effetto Ricardo scompare e la crescita diventa labour-intensive: **la compressione salariale non è la risposta alla produttività ferma, ne è una causa**.
+
+## 6. Fonti e strumenti
+
+- **AMECO** via DBnomics (`https://api.db.nomics.world/v22/series/AMECO/<CODE>/ITA.1.0.0.0.<CODE>`), vintage Autumn Forecast 2025. Interfaccia ufficiale: `https://dashboard.tech.ec.europa.eu/qs_digit_dashboard_mt/public/sense/app/667e9fba-eea7-4d17-abf0-ef20f6994336`.
+- **Eurostat**: `nama_10_a64` (D1, B1G; floor 1995 — vincolo strutturale, non colmabile), `nama_10_a64_p5` (P51G), `nasa_10_nf_tr` (B9).
+- **OCSE**: Economic Outlook (NLGQ, NLGXQ, TYB, SRATIO), MSTI (GERD/GDP, BERD).
+- **World Bank**: R&D/GDP, high-tech export share. **PWT 10.0**: solo come confronto in §4.2bis/A.7.
+- **Software**: Python (pandas, statsmodels; `pip install statsmodels` necessario in ogni nuovo container), R 4.6 (did, urca, strucchange, lmtest, vars, sandwich). Replica cross-software: dire sempre "risultati sostanzialmente coincidenti, con differenze solo di arrotondamento".
+- **Editing DOCX** (Claude): `unzip` → `merge_runs.py` → modifica di `word/document.xml` → `zip -X` → `validate.py --original` → `soffice --convert-to pdf`. Controllo di integrità: conteggio paragrafi e validazione OOXML. Verificare sempre MD5 e numero di pagine della versione su cui si lavora: più volte sono circolate versioni vecchie in cache.
+
+## 7. Convenzioni terminologiche
+
+- "Bai-Perron strucchange su modelli lineari con trend segmentato"; break "robustamente rilevati entro le specificazioni in livelli".
+- "Batteria standard di test per serie storiche non stazionarie" (mai "Reinsel-Ahn").
+- "Rapporto investimento privato/surplus" (mai "tasso di reinvestimento").
+- SCM: "divergenza nel regime di convergenza post-1992" (mai "effetto Maastricht" secco).
+- Scala mobile cessata con il protocollo del 31 luglio 1992; Ciampi-Giugni 1993 = nuovo assetto contrattuale; Maastricht in vigore 1° novembre 1993.
+- R&D→produttività: fatto descrittivo e ipotesi, non "canale bloccato" dimostrato.
+- Torrini documenta estrazione di rendita **con** guadagni di TFP: la quasi-rendita spiega la destinazione dei guadagni di efficienza (ai profitti anziché a salari o prezzi), non la loro assenza. Modiano-Onado (2023) è la fonte per profitti-su/investimenti-giù/finanziarizzazione, in particolare per la grande impresa privata post-1982 (§5.5), oltre che per le privatizzate (§6bis).
+- Il paper **non usa la TFP** come misura del progresso tecnico (critica di Cambridge): la TFP compare solo in §4.2bis (perché non la usiamo), tabella 9.2 e A.7.
+
+## 8. Decisioni chiuse — non ri-litigare
+
+1. Arrighi fuori da §1.2 e §7.3 e dalla bibliografia; "arrighiano/a" preservato solo in §8.2-8.4 come lente storica (Opzione B).
+2. 13/24 Chow HAC + Holm è la cifra canonica; 11/21 è la versione standard preliminare, citabile solo come tale.
+3. r è borderline I(0)/I(1), distinto da ω e I/K.
+4. UQGD (aggiustato per autonomi) è la baseline di r; r_gross è variante.
+5. §6bis: il problema di identificazione del DiD è strutturale (dati dal 1995, cesura 1992-93: il "pre-trattamento" è già post-rottura; i controlli C, F, G, I sono colpiti anch'essi). Non si risolve aggiungendo outcome. C-S riportato onestamente, risultato declassato, tesi riformulata come quasi-rendite non reinvestite. Il pre-trend è letto come trattamento esteso sul ciclo liberalizzazione-privatizzazione 1992-2000.
+6. Il declino dell'investment rate si vede solo in Energia (1,00 → 0,79; picco 2003, minimo 2023), non in Trasporti e Info-com: fatto mono-settoriale, descrittivo, non causale.
+7. VECM ridotto in A.6 con avvertenza forte; VECM a 8 variabili in A.4 solo per tracciabilità.
+8. TFP sostituita da identità distributiva + Sylos Labini (v22); la regressione cross-country R&D–TFP sopravvive solo in A.7 "per confronto".
+9. "Produttività nominale/capacità di valorizzazione" del libro Punto Rosso **non** importata (nel paper è deflatore + 1/ω, ridondante con l'identità).
+10. Framing complessivo: triangolazione descrittiva, non causalità.
+
+## 9. Trappole note
+
+- **Citazioni inventate dagli LLM**: in versioni passate erano comparsi autori inesistenti ("Valeria Martin e Giovanni Vasta") e anni sbagliati. Di Martino e Vasta (2017, non 2010), Modiano e Onado (2023, Il Mulino, Pietro e Marco), Torrini (2005 Temi di discussione 551, anche *Politica Economica* 21(1); 2016 Questioni di Economia e Finanza 318). **Nessun LLM aggiunge o corregge una voce bibliografica senza fonte verificata; in dubbio, lo segnala all'autore.** Le 16 voci aggiunte in v22 (Felipe-McCombie 2014/2020, Gaddi-Garbellini-Oro 2025, Garegnani 1970, Halevi 2025, Harcourt 1972, Kaldor 1966, Pasinetti 1959/1981, Robinson 1953, Rowthorn 1975, Rymes 1971, Shaikh 1974, Sraffa 1960, Sylos Labini 1984/1993, Verdoorn 1949) sono scritte a memoria e attendono verifica dell'autore.
+- Numeri "stimati" ancora nel testo e dichiarati tali: SCM con Grecia (−3,4), robustness R&D (+0,30/0,35). Non vanno presentati come stime effettuate.
+- In §6bis coesistono la versione preliminare (TWFE su dati simulati/aggregati) e quella su Eurostat reale: è dichiarato, non è un errore da "correggere" cancellando una delle due.
+- Le cifre "ω cala di X pp" in §5.2/§8 vanno lette al netto di 1,5-2 pp di riclassificazione IRAP.
+- Stringhe spezzate in più run XML: le sostituzioni nel docx vanno verificate sul testo estratto (pdftotext), non date per riuscite.

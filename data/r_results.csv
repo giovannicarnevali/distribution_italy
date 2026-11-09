@@ -1,0 +1,14 @@
+"test","statistic","cv_5pct"
+"ADF lev r_main",-2.81235312578486,-2.89
+"ADF diff r_main",-6.13174305261167,-2.89
+"ADF lev omega",-0.807873220066682,-2.89
+"ADF diff omega",-5.92162969902994,-2.89
+"KPSS lev r_main",0.135698298043029,0.463
+"KPSS lev omega",1.57341120432673,0.463
+"PO Pu (r,omega)",4.81872423834679,33.713
+"PO Pz (r,omega)",12.4457043792906,55.2202
+"Johansen trace rank=0",21.9483692092754,19.96
+"Johansen trace rank<=1",7.66417710933947,9.24
+"BP r_main n breaks",4,NA
+"BP omega n breaks",4,NA
+"BP IK n breaks",4,NA
