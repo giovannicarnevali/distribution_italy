@@ -2,7 +2,7 @@
 Oxford Development Studies 28(3), Table 1, definita su SITC Rev.2 a 3 cifre e qui adattata ai codici
 introdotti in Rev.3/Rev.4 (elencati separatamente in EXTRA). Produce quote sull'export manifatturiero
 (esclusi prodotti primari e 'altre transazioni') per paese e anno.
-Uso: python lall_classify.py comtrade_sitc3_raw.csv out_prefix
+Uso: python lall_classify.py "data/raw/comtrade/COMTRADE_X_SITC3_*.csv" data/derived/lall   (il pattern tra virgolette)
 """
 import sys, pandas as pd
 
@@ -29,7 +29,10 @@ for name, lst in [("PP", PP), ("RB1", RB1), ("RB2", RB2), ("LT1", LT1), ("LT2", 
 CAT.update(EXTRA)
 GROUP = {"PP": "primary", "RB1": "resource", "RB2": "resource", "LT1": "low", "LT2": "low", "MT1": "medium", "MT2": "medium", "MT3": "medium", "HT1": "high", "HT2": "high", "OTH": "other"}
 
-df = pd.read_csv(sys.argv[1], dtype={"sitc3": str}); pref = sys.argv[2]
+import glob
+src = sys.argv[1]; pref = sys.argv[2]
+files = sorted(glob.glob(src)) if "*" in src else [src]
+df = pd.concat([pd.read_csv(f, dtype={"sitc3": str}) for f in files]); print("file letti:", len(files))
 df["sitc3"] = df["sitc3"].str.zfill(3)
 df["cat"] = df["sitc3"].map(CAT); df["group"] = df["cat"].map(GROUP).fillna("unclassified")
 unc = df[df.group == "unclassified"].groupby("sitc3")["value_usd"].sum().sort_values(ascending=False)

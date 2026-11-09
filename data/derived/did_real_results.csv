@@ -1,0 +1,7 @@
+metric,value
+DiD_simple,-16.54005539251509
+DiD_staggered,-14.973872883371415
+DiD_simple_pval,1.3999862455573804e-06
+DiD_staggered_pval,3.119328856608159e-05
+parallel_trends_coef,-0.5585067277486682
+parallel_trends_pval,0.6891521390041768
