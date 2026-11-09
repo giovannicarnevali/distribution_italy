@@ -63,7 +63,7 @@ Nel modello di Goodwin β è la crescita delle ore lavorate totali (AMECO NLHT),
 | Debito/PIL (AMECO UDGG/UVGD) | 54,3 (1980), 91,4 (1990), 118,8 (2010), 134,8 (2014) |
 | LP reale, finestre canoniche | 1970-79 3,1; 1980-89 1,8; 1986-95 2,0; 1993-2007 0,8; 1996-2007 0,3; 2014-24 0,1 |
 
-Lettura: la "stagnazione della TFP" post-1993 è la stagnazione del salario reale per identità; il recupero post-2014 è solo r̂. Dopo il 1992 l'effetto Ricardo scompare e la crescita diventa labour-intensive: **la compressione salariale non è la risposta alla produttività ferma, ne è una causa**.
+Lettura: ciò che la letteratura mainstream chiama "stagnazione della TFP" post-1993 è, per identità, la stagnazione del salario reale, e il suo "recupero" post-2014 è solo r̂ — il paper lo mostra per smontare la misura, non la adotta. La spiegazione positiva della produttività ferma è nell'equazione di Sylos Labini: dopo il 1992 l'effetto Ricardo scompare e la crescita diventa labour-intensive; **la compressione salariale non è la risposta alla produttività ferma, ne è una causa**.
 
 ## 6. Fonti e strumenti
 
