@@ -32,7 +32,7 @@ suppressPackageStartupMessages({
 })
 
 # --- 1. Carica dati ---------------------------------------------------------
-csv_path <- "did_eurostat_sectors.csv"
+csv_path <- "data/did_eurostat_REAL.csv"  # dataset Eurostat reale (209 righe); eseguire dalla radice del repository
 if (!file.exists(csv_path)) {
   stop(paste("CSV non trovato:", csv_path,
              "\nMetti il file nella working directory"))

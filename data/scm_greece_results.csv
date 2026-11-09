@@ -1,0 +1,3 @@
+spec,donors,weights_nonzero,gap_post1992,gap_1998_2001,rmspe_pre,ratio_post_pre,rank_italy,n_units,p_one_sided,loo_min,loo_max
+baseline,"ESP FRA BEL NLD AUT PRT FIN","ESP 0.438; FRA 0.226; AUT 0.275; FIN 0.061",-3.528,-5.431,1.096,3.43,1,8,0.125,-3.86,-3.27
+with_GRC,"ESP FRA BEL NLD AUT PRT FIN GRC","ESP 0.426; PRT 0.194; FIN 0.221; GRC 0.160",-2.478,-4.706,1.641,1.71,2,9,0.222,-3.53,-2.48
