@@ -39,6 +39,9 @@ Risposta alle due review esterne della v22 (ChatGPT, 10 rilievi; Kimi, 52 riliev
 
 ## 3. Pendenti, in ordine di priorità
 
+**Metodo di lavoro deciso dall'autore il 9/11**: revisione a pezzi secondo `docs/SMONTAGGIO.md` (30 pezzi, 4 destinazioni tematiche A/B/C/D), con rilettura integrale, riscrittura nel suo stile, verifica dei numeri sui CSV, interrogazione di ogni passaggio econometrico e verifica di ogni voce bibliografica. Nessuna sottomissione prima della fine del percorso.
+
+
 | # | Pendente | Chi | Note |
 |---|---|---|---|
 | 1 | **Rilettura delle parti riscritte in v23**: §4.2 (REER/fase 2), §5.5(a), §5bis.2, §8.6.1, §6bis.1 | Autore | Sono riformulazioni, non refusi |

@@ -14,6 +14,7 @@ docs/
   ISTRUZIONI_PROGETTO_CHATGPT.md   istruzioni da incollare nel progetto ChatGPT (valide anche per Kimi/DeepSeek)
   CONTEXT.md              conoscenza stabile del progetto: tesi, struttura, risultati, dati, decisioni chiuse
   HANDOFF.md              stato corrente, pendenti, prompt di apertura (si aggiorna a ogni sessione)
+  SMONTAGGIO.md           tabella di smontaggio in 4 paper tematici e piano di revisione a pezzi (30 sedute)
   COLLABORATION.md        protocollo multi-LLM: ruoli, formato delle review, triage
 paper/
   working_paper_v23b_REVIEWED.docx / .pdf
