@@ -1,7 +1,7 @@
 # distribution_italy
 
 **Le lotte di classe in Italia. Fasi del declino italiano 1980–2024**
-Working paper di Giovanni Battista Carnevali. Versione corrente: **v23_REVIEWED** (9 novembre 2026, 106 pagine).
+Working paper di Giovanni Battista Carnevali. Versione corrente: **v23b_REVIEWED** (9 novembre 2026, 106 pagine).
 
 Lettura econometrica del declino italiano come sequenza di regimi di conflitto distributivo (profit squeeze fordista 1970-79; restaurazione istituzionale post-Maastricht 1992-2007; finanziarizzazione ed export-led 2008-2024), in un quadro Marx-Goodwin-Sylos Labini-Aglietta-Godley-Graziani-Bellofiore. Dati AMECO 1960-2024, Eurostat NACE A64 1995-2024, OCSE EO/MSTI, World Bank. Metodi: PELT, Quandt-Andrews, Chow narrativi HAC + Holm-Bonferroni, Bai-Perron (strucchange e replica Python), Synthetic Control (con estensione alla Grecia), DiD staggered (TWFE + Callaway-Sant'Anna), cointegrazione/VECM, decomposizione di Kalecki, identità distributiva della TFP (Felipe-McCombie), equazione di produttività di Sylos Labini, composizione tecnologica dell'export (UN Comtrade, tassonomia di Lall).
 
@@ -16,8 +16,8 @@ docs/
   HANDOFF.md              stato corrente, pendenti, prompt di apertura (si aggiorna a ogni sessione)
   COLLABORATION.md        protocollo multi-LLM: ruoli, formato delle review, triage
 paper/
-  working_paper_v23_REVIEWED.docx / .pdf
-  archive/                          versioni precedenti (v22)
+  working_paper_v23b_REVIEWED.docx / .pdf
+  archive/                          versioni precedenti (v22, v23)
 data/
   ameco_tfp.csv                     AMECO (DBnomics) 1960-2024: OVGD UVGD PVGD PIGT NETD NLHT OKND UWCD UOGD UQGD UTVN ALCD0 OIGT NWTD
   kalecki_data_full.csv             serie per l'equazione dei profitti (AMECO + OCSE EO)
