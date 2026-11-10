@@ -1,7 +1,7 @@
 # distribution_italy
 
 **Le lotte di classe in Italia. Fasi del declino italiano 1980–2024**
-Working paper di Giovanni Battista Carnevali. Versione corrente: **v23b_REVIEWED** (9 novembre 2026, 106 pagine).
+Working paper di Giovanni Battista Carnevali. Versione corrente: **v24_RENDITE** (10 novembre 2026, 104 pagine).
 
 Lettura econometrica del declino italiano come sequenza di regimi di conflitto distributivo (profit squeeze fordista 1970-79; restaurazione istituzionale post-Maastricht 1992-2007; finanziarizzazione ed export-led 2008-2024), in un quadro Marx-Goodwin-Sylos Labini-Aglietta-Godley-Graziani-Bellofiore. Dati AMECO 1960-2024, Eurostat NACE A64 1995-2024, OCSE EO/MSTI, World Bank. Metodi: PELT, Quandt-Andrews, Chow narrativi HAC + Holm-Bonferroni, Bai-Perron (strucchange e replica Python), Synthetic Control (con estensione alla Grecia), DiD staggered (TWFE + Callaway-Sant'Anna), cointegrazione/VECM, decomposizione di Kalecki, identità distributiva della TFP (Felipe-McCombie), equazione di produttività di Sylos Labini, composizione tecnologica dell'export (UN Comtrade, tassonomia di Lall).
 
@@ -17,8 +17,8 @@ docs/
   SMONTAGGIO.md           tabella di smontaggio in 4 paper tematici e piano di revisione a pezzi (30 sedute)
   COLLABORATION.md        protocollo multi-LLM: ruoli, formato delle review, triage
 paper/
-  working_paper_v23b_REVIEWED.docx / .pdf
-  archive/                          versioni precedenti (v22, v23)
+  working_paper_v24_RENDITE.docx / .pdf
+  archive/                          versioni precedenti (v22, v23, v23b)
 data/
   README.md                         catalogo di ogni file: fonte, URL, data di download, uso nel paper
   raw/ameco/ (34 file)              una serie AMECO per file, via DBnomics
@@ -38,10 +38,11 @@ scripts/
   python/bai_perron.py              Bai-Perron (DP, BIC) con specificazione 'mean' e 'trend'
   python/fetch_comtrade.py          scarica export SITC3 da UN Comtrade (serve chiave gratuita)
   python/lall_classify.py           tassonomia di Lall e quote per periodo
+  python/privatizzate_surplus.py    quota profitti, surplus reinvestito e VA reale per branca (Tabella 6bis.1)
   python/setup_cell_robustness.py
   R/did_callaway_santanna.R         DiD staggered (pacchetto did), event-study
   R/working_paper_robustness.R      Phillips-Ouliaris, Johansen, Bai-Perron  [sul PC dell'autore, da caricare]
-  docx/build_v22.py, build_v23.py, build_v23b.py   modifiche testuali applicate a ogni versione del DOCX (tracciabilità)
+  docx/build_v22.py … build_v24.py   modifiche testuali applicate a ogni versione del DOCX (tracciabilità)
 notebooks/
   Marx_Schumpeter_Italia_v12_robustness.ipynb   notebook finale (le versioni v2-v11 restano sul PC dell'autore)
 ```

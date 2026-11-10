@@ -1,18 +1,22 @@
 # HANDOFF — stato corrente
 
-Aggiornato: 9 novembre 2026 (v23b, dopo la review ChatGPT/Kimi sulla v23). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
+Aggiornato: 10 novembre 2026 (v24: §6bis riscritto senza DiD, con la verifica ex post Torrini/Modiano-Onado). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
 
 ## 1. Versione corrente
 
 | | |
 |---|---|
-| File | `paper/working_paper_v23b_REVIEWED.docx` / `.pdf` |
-| Pagine | 106 |
-| MD5 | docx `b582170b5c228387b5cd8bbad6821cc7` · pdf `50906b29733541d7eea5acac42522889` |
-| Base | v23_REVIEWED (106 pp, MD5 docx `4aea79aa20fc7d18814f6235de566a43`) e v22 (MD5 `c6070a8e…`), in `paper/archive/` |
+| File | `paper/working_paper_v24_RENDITE.docx` / `.pdf` |
+| Pagine | 104 |
+| MD5 | docx `872a51776928a824e2626dbc81cc2ceb` · pdf `1b30ebda640053759749293f8b38b04b` |
+| Base | v23b_REVIEWED (106 pp, MD5 docx `b582170b…`), v23 e v22 in `paper/archive/` |
 | Repository | `https://github.com/giovannicarnevali/distribution_italy` — **reso pubblico dall'autore il 9/11** per farlo leggere ai reviewer; il paper in bozza è quindi scaricabile da chiunque |
 
 Storia: v17 triangolazione → v18 replica R → v19 peer review → v20 Kalecki + IRAP → v21_REFEREE2 → v22 TFP/Cambridge → **v23 REVIEWED** (fusione del ramo di luglio + review ChatGPT e Kimi sulla v22).
+
+## 2b. Cosa ha fatto la v24 (10/11)
+
+**§6bis riscritto, DiD eliminato.** Decisione dell'autore: la tesi di Modiano-Onado non è "privatizzazione → compressione salariale" ma rendita che si innesta su salari già compressi dal 1992-93 e che non viene reinvestita; il DiD settoriale sulla quota salari non poteva testarla (non identificabile, e una quota salari per branca non distingue salari compressi da valore aggiunto gonfiato dalla rendita). Nuova struttura: 6bis.1 narrativa (ipotesi riformulata); **6bis.2 Torrini 2005/2016** con citazioni e pagine (`docs/torrini_estratti.md`); **6bis.3 verifica ex post Eurostat 1995-2024** — Tabella 6bis.1: quota profitti, surplus reinvestito P51G/(B1G−D1), VA in volume per D, J61, K, H, C, totale (`scripts/python/privatizzate_surplus.py`, `data/derived/privatizzate_surplus_investimenti.csv`): energia 60→78% e 169→73%, finanza 40→57% e 25→15%, telecom rendita 1995-2007 poi evaporata, **manifatturiero opposto 49→45% e 39→55%**, totale fermo 39%; l'attesa di Torrini (p. 32) non si è realizzata, Modiano-Onado confermata; 6bis.4 perché non un DiD (tentato e scartato, codice nel repo); 6bis.5 riformulazione nei termini dell'autore. Figure 6bis.1-6bis.2 eliminate. Propagato in abstract IT/EN (risultato 4), §1.1bis, §5bis.3, §8.6, §9.1 nota di framing, Tabella 9.1, acknowledgments. Bibliografia invariata (Callaway-Sant'Anna ecc. restano citati in 6bis.4). Testo di 6bis.2-6bis.5 scritto da Claude: **da riscrivere nello stile dell'autore (pezzo 19)**.
 
 ## 2a. Cosa ha fatto la v23b (review ChatGPT/Kimi sulla v23)
 
@@ -44,14 +48,14 @@ Risposta alle due review esterne della v22 (ChatGPT, 10 rilievi; Kimi, 52 riliev
 
 | # | Pendente | Chi | Note |
 |---|---|---|---|
-| 1 | **Rilettura delle parti riscritte in v23**: §4.2 (REER/fase 2), §5.5(a), §5bis.2, §8.6.1, §6bis.1 | Autore | Sono riformulazioni, non refusi |
+| 1 | **Rilettura delle parti riscritte in v23-v24**: §4.2 (REER/fase 2), §5.5(a), §5bis.2, §8.6.1, **§6bis intero** | Autore | Sono riformulazioni, non refusi |
 | 2 | **Verifica bibliografica integrale**: 16 voci v22 + 23 voci v23 scritte da Claude senza cataloghi; citati nel testo senza voce: Salvati (1981), Romagnoli (1980), De Cecco ("keynesismo criminale", §5) — fornire estremi o togliere; Gandolfo 2005 vs 2010 (Kimi C25) | Autore | Kimi ha verificato: Di Martino-Vasta 2017, Modiano-Onado 2023, Mortágua 2019, Modigliani-Padoa Schioppa 1978, Brancaccio-De Cristofaro 2025 |
 | 3 | Verificare che le tesi attribuite a Di Martino-Vasta in §5bis.1 (monopsonio distrettuale, trappola salari compressi) siano nel volume | Autore | Kimi A1 |
 | 4 | Riallineamenti SME: la lista del 1981-87 ora include marzo 1981 e il 1990 è trattato come riduzione della parità centrale; **segno e date da verificare su fonte** (Kimi C10) | Autore | Banca d'Italia, Bollettino 1992 |
 | 5 | ~~Numerazione figure/tabelle~~ fatta in v23b; restano gli stili heading di §2.1-2.2 (Kimi C19) | Claude | Minore |
 | 6 | Periodizzazione: Tabella 1.1 fase 4 "1995-2007" vs tabelle analitiche 1993-2007; 1987 in due fasi; 2008-13 senza fase (Kimi C15) | Autore decide | Scelta sostantiva |
 | 7 | ~~α−β 2,32 vs 2,31~~ chiuso: valore non arrotondato 2,325 | — | — |
-| 8 | §6bis.2 (DiD preliminare su dati simulati/aggregati) coesiste con 6bis.3-6bis.5 su Eurostat reale: dichiarato, ma valutare se eliminarlo | Autore | Kimi non lo ha contestato; semplificherebbe |
+| 8 | ~~§6bis.2 DiD preliminare~~ eliminato in v24 insieme a tutto il DiD | — | — |
 | 9 | Round di review sulla v23b (MD5 `b582170b…`) solo se l'autore lo ritiene utile: i round su v22 e v23 hanno già coperto numeri, fonti, coerenza | Reviewer | — |
 | 10 | Paragrafo qualitativo grandi imprese (SIP/Telecom, Pirelli, Ferruzzi, FIAT, IRI): 4-5 fatti con date dall'autore | Autore | Proposta Kimi di giugno |
 | 11 | Formalizzazione delle fasi (saldi settoriali + ciclo elettorale 1980-92; Lotka-Volterra profitti/quasi-rendite 1994-2007) | Autore | Idee dell'autore, non nel paper |
@@ -65,7 +69,7 @@ Cartella `C:\Users\an_om\Documents\Claude\files08062026\`: `working_paper_data.c
 ## 5. Prompt di apertura
 
 **Per Claude (nuova chat)**
-> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v23b_REVIEWED.docx` (MD5 b582170b…, 106 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
+> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24_RENDITE.docx` (MD5 872a5177…, 104 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
 
 **Per un reviewer (ChatGPT, Kimi, DeepSeek)**
-> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v23b_REVIEWED.pdf`, 106 pagine, MD5 del docx b582170b5c228387b5cd8bbad6821cc7: conferma la versione citando il titolo di §8.6.1 e il secondo risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
+> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24_RENDITE.pdf`, 104 pagine, MD5 del docx 872a51776928a824e2626dbc81cc2ceb: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
