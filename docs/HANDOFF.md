@@ -1,18 +1,22 @@
 # HANDOFF — stato corrente
 
-Aggiornato: 10 novembre 2026 (v24: §6bis riscritto senza DiD, con la verifica ex post Torrini/Modiano-Onado). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
+Aggiornato: 10 novembre 2026, sera (v24b: §6bis.3 corretto dopo la review ChatGPT — surplus operativo lordo B2A3G per identità, etichette e linguaggio ridimensionati). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
 
 ## 1. Versione corrente
 
 | | |
 |---|---|
-| File | `paper/working_paper_v24_RENDITE.docx` / `.pdf` |
-| Pagine | 104 |
-| MD5 | docx `872a51776928a824e2626dbc81cc2ceb` · pdf `1b30ebda640053759749293f8b38b04b` |
+| File | `paper/working_paper_v24b_RENDITE.docx` / `.pdf` |
+| Pagine | 105 |
+| MD5 | docx `f4620091a6410ce751cc13a06ae794bb` · pdf `6a38242c656273c84a04035579682402` |
 | Base | v23b_REVIEWED (106 pp, MD5 docx `b582170b…`), v23 e v22 in `paper/archive/` |
 | Repository | `https://github.com/giovannicarnevali/distribution_italy` — **reso pubblico dall'autore il 9/11** per farlo leggere ai reviewer; il paper in bozza è quindi scaricabile da chiunque |
 
 Storia: v17 triangolazione → v18 replica R → v19 peer review → v20 Kalecki + IRAP → v21_REFEREE2 → v22 TFP/Cambridge → **v23 REVIEWED** (fusione del ramo di luglio + review ChatGPT e Kimi sulla v22).
+
+## 2c. Cosa ha fatto la v24b (10/11, sera) — review ChatGPT sulla Tabella 6bis.1
+
+ChatGPT ha letto script e CSV sul repo e ha segnalato, a ragione: (1) B1G − D1 non è il surplus operativo lordo (restano dentro le imposte nette sulla produzione D29X39); (2) "quota di profitti reinvestita" è un'etichetta non giustificata dalla formula (flussi lordi, debito, valori >100%); (3) le branche sono intere, non le imprese privatizzate; (4) la tabella è descrittiva e non risolve l'identificazione; (5) "Torrini smentito" e "Modiano-Onado confermata" vanno ridimensionati; (6) tasso di investimento P51G/B1G e P51G/surplus sono misure diverse. Applicato in v24b: surplus = B1G − D1 − D29X39 (identità; Eurostat non pubblica B2A3G a livello A64), etichette "surplus operativo lordo sul VA" e "investimenti fissi lordi / surplus", avvertenza sulle branche intere, "evidenza descrittiva compatibile con", Torrini "condizione non verificata, come egli stesso temeva", tasso di investimento e deflatore del VA riportati nel testo. **Scoperta collaterale**: nell'energia i contributi netti alla produzione (incentivi alle rinnovabili, D39) valgono il 20% del VA nel 2014-24 ed entrano nel surplus per identità: dichiarato. Nuovi numeri: energia 54→99% e 186→58%; finanza 37→52% e 28→17%; telecom 71→77→72% e 50→34→79% con deflatore −4-5%/anno dopo il 2008; trasporti 45→48% e 74→63%; manifatturiero 48→45% e 40→56%; totale 56→54% e 40→40%.
 
 ## 2b. Cosa ha fatto la v24 (10/11)
 
@@ -69,7 +73,7 @@ Cartella `C:\Users\an_om\Documents\Claude\files08062026\`: `working_paper_data.c
 ## 5. Prompt di apertura
 
 **Per Claude (nuova chat)**
-> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24_RENDITE.docx` (MD5 872a5177…, 104 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
+> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24b_RENDITE.docx` (MD5 f4620091…, 105 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
 
 **Per un reviewer (ChatGPT, Kimi, DeepSeek)**
-> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24_RENDITE.pdf`, 104 pagine, MD5 del docx 872a51776928a824e2626dbc81cc2ceb: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
+> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24b_RENDITE.pdf`, 105 pagine, MD5 del docx f4620091a6410ce751cc13a06ae794bb: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
