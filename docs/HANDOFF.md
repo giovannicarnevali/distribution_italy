@@ -1,14 +1,14 @@
 # HANDOFF — stato corrente
 
-Aggiornato: 11 novembre 2026 (v24e: review Kimi sulla v24c con replica indipendente della Tabella 6bis.1 al decimo di punto; SCM originale vs replica dichiarati; telecom 1,9→0,8 datati. v24d: quarto round ChatGPT, propagazione negli abstract e in Tabella 9.1, Torrini separato da Modiano-Onado in §6bis.5, finanza 36. v24c: terzo round ChatGPT sulla Tabella 6bis.1 — etichette 'surplus operativo lordo e reddito misto', saldo D39−D29 non attribuito con certezza alle rinnovabili, deflatori come indizio non prova, Torrini 'inapplicato non smentito'). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
+Aggiornato: 11 novembre 2026 (v24f: §8.6.1 dichiara algoritmo/avvio delle due soluzioni SCM e l'invarianza delle conclusioni inferenziali, su richiesta Kimi. v24e: review Kimi sulla v24c con replica indipendente della Tabella 6bis.1 al decimo di punto; SCM originale vs replica dichiarati; telecom 1,9→0,8 datati. v24d: quarto round ChatGPT, propagazione negli abstract e in Tabella 9.1, Torrini separato da Modiano-Onado in §6bis.5, finanza 36. v24c: terzo round ChatGPT sulla Tabella 6bis.1 — etichette 'surplus operativo lordo e reddito misto', saldo D39−D29 non attribuito con certezza alle rinnovabili, deflatori come indizio non prova, Torrini 'inapplicato non smentito'). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
 
 ## 1. Versione corrente
 
 | | |
 |---|---|
-| File | `paper/working_paper_v24e_RENDITE.docx` / `.pdf` |
+| File | `paper/working_paper_v24f_RENDITE.docx` / `.pdf` |
 | Pagine | 106 |
-| MD5 | docx `392928a090def7ac6750255565680a96` · pdf `83daae0fb4ee81a5d2e55b810496b155` |
+| MD5 | docx `2e52a62d15c8d6fc4b053d3bffb98909` · pdf `cff2a82ba8c879fa0b6fdd4a9e4973fc` |
 | Base | v23b_REVIEWED (106 pp, MD5 docx `b582170b…`), v23 e v22 in `paper/archive/` |
 | Repository | `https://github.com/giovannicarnevali/distribution_italy` — **reso pubblico dall'autore il 9/11** per farlo leggere ai reviewer; il paper in bozza è quindi scaricabile da chiunque |
 
@@ -77,7 +77,8 @@ Risposta alle due review esterne della v22 (ChatGPT, 10 rilievi; Kimi, 52 riliev
 | 11 | Formalizzazione delle fasi (saldi settoriali + ciclo elettorale 1980-92; Lotka-Volterra profitti/quasi-rendite 1994-2007) | Autore | Idee dell'autore, non nel paper |
 | 12 | Visibilità del repository (pubblico dal 9/11): decidere se tornare privato dopo le review | Autore | — |
 | 13 | Verificare l'attribuzione del saldo D39−D29 dell'energia (20% del VA 2014-24) agli incentivi alle rinnovabili: serie D39 per branca (Istat) o Rapporto attività GSE | Autore | Fino ad allora il testo dice "compatibile con" |
-| 14 | Passata editoriale finale: separatore decimale uniforme (virgola) in tutto il corpo; rimozione dell'avvertenza sulle citazioni nella nota metodologica dopo il pezzo 29 | Autore + Claude | Alla fine dello smontaggio |
+| 14 | Passata editoriale finale: separatore decimale uniforme (virgola) — Kimi si è offerta di generare la lista dei match con regex escludendo codici, sezioni, hash, URL; poi correzione mirata; rimozione dell'avvertenza sulle citazioni nella nota metodologica dopo il pezzo 29, sostituita dalla forma affermativa | Kimi (lista) + Claude (applicazione) + Autore | Alla fine dello smontaggio |
+| 14b | Rilettura mirata di Kimi su §4.2, §5.5, §5bis.2, §6bis, §8.6.1 (piano argomentativo e stilistico): l'autore carica la v24f nella chat di Kimi | Kimi | Prossimo round |
 | 15 | Zenodo/DOI, cover letter, sede | Autore | Bassa |
 
 ## 4. File sul PC dell'autore
@@ -87,7 +88,7 @@ Cartella `C:\Users\an_om\Documents\Claude\files08062026\`: `working_paper_data.c
 ## 5. Prompt di apertura
 
 **Per Claude (nuova chat)**
-> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24e_RENDITE.docx` (MD5 392928a0…, 106 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
+> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24f_RENDITE.docx` (MD5 2e52a62d…, 106 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
 
 **Per un reviewer (ChatGPT, Kimi, DeepSeek)**
-> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24e_RENDITE.pdf`, 106 pagine, MD5 del docx 392928a090def7ac6750255565680a96: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
+> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24f_RENDITE.pdf`, 106 pagine, MD5 del docx 2e52a62d15c8d6fc4b053d3bffb98909: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
