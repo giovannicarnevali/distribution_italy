@@ -55,3 +55,31 @@ L'autore approva con un "procedi"; le correzioni giudicate fondate si applicano 
 ## 6. Chiusura di sessione
 
 Claude aggiorna `HANDOFF.md` (versione, MD5, modifiche fatte, pendenti ri-prioritizzati, prompt di apertura) e, se cambiano fatti stabili, `CONTEXT.md`. L'autore carica i file aggiornati nella sessione successiva o li legge dal repository `giovannicarnevali/distribution_italy`.
+
+## 7. Filo principale e sessioni per compito
+
+Il filo principale del progetto **non è una chat**: è il ramo `main` del repository più `docs/HANDOFF.md`. Una chat perde il contesto quando viene compattata; `main` e `HANDOFF.md` no. Ogni compito (un pezzo dello SMONTAGGIO, un round di review, una verifica sui dati) si fa in una **sessione nuova** di Claude Code collegata al repository, e si chiude riportando il risultato su `main`.
+
+Ciclo di una sessione-compito:
+
+1. **Apertura.** Nuova sessione con il repo collegato; primo messaggio = prompt di apertura di `HANDOFF.md` §5 con `Oggi: pezzo N` (o `review X`, `verifica Y`). Claude legge `CONTEXT.md`, `HANDOFF.md`, `COLLABORATION.md`, verifica MD5 e pagine della versione corrente in `paper/`.
+2. **Ramo git.** Claude crea un ramo `task/<nome-parlante>` (es. `task/pezzo-06-anni-ottanta`, `task/review-chatgpt-v25`) e lavora lì. Script e dati nuovi vanno in `scripts/` e `data/` sul ramo.
+3. **Chiusura.** Claude produce la nuova versione del paper (suffisso parlante, PDF, MD5), aggiorna `HANDOFF.md` §1-3 e, su richiesta dell'autore, fa commit, merge su `main` e push. Il ramo si cancella dopo il merge.
+4. La sessione poi si abbandona. Il compito successivo riparte dal passo 1, da `main` aggiornato.
+
+Vincoli:
+
+- **Il DOCX non si fonde.** Due sessioni che modificano il paper in parallelo producono due DOCX inconciliabili. Perciò le sessioni-compito **non toccano `paper/`**: producono proposte (sotto), e una sola sessione alla volta le applica al DOCX partendo dall'ultima versione su `main`.
+- Un compito che resta a metà si chiude lo stesso: `HANDOFF.md` §3 registra cosa manca, e il ramo resta pushato ma non fuso, con il nome scritto nel HANDOFF.
+- La sessione principale di lunga durata resta utile per coordinare: aprire pezzi, decidere priorità, girare review, scegliere fra proposte e applicarle. Ma nessuna informazione vive solo lì: se viene compattata o chiusa, una sessione nuova riparte da `main`, `HANDOFF.md` e `docs/proposals/`.
+
+Schema a tre passi — il ramo propone, l'autore sceglie, una sessione applica:
+
+1. **Proposta.** La sessione-compito scrive `docs/proposals/<nome-compito>.md` sul proprio ramo (es. `docs/proposals/pezzo-06-anni-ottanta.md`) e lo pusha. Formato, paragrafo per paragrafo:
+   - *Dove*: sezione e prime parole esatte del paragrafo nella versione corrente (così l'applicazione è una sostituzione testuale, non un'interpretazione);
+   - *Testo nuovo*: il paragrafo riscritto per intero;
+   - *Perché*: una riga;
+   - *Numeri*: ogni cifra nuova con lo script e il file di `data/` da cui esce.
+   Due sessioni possono proporre versioni diverse dello stesso pezzo: file diversi, affiancabili.
+2. **Scelta.** L'autore legge le proposte e decide (anche riscrivendo nel proprio stile). L'esito va in `HANDOFF.md` §3: quali proposte sono approvate, quali scartate, quali modificate.
+3. **Applicazione.** Una sessione — quella principale o una nuova — applica le proposte approvate al DOCX con la toolchain standard, produce la nuova versione (suffisso, PDF, MD5), aggiorna `HANDOFF.md`, e su richiesta dell'autore fa commit, merge e push. Le proposte applicate si spostano in `docs/proposals/applied/`.
