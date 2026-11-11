@@ -1,18 +1,22 @@
 # HANDOFF — stato corrente
 
-Aggiornato: 10 novembre 2026, sera (v24b: §6bis.3 corretto dopo la review ChatGPT — surplus operativo lordo B2A3G per identità, etichette e linguaggio ridimensionati). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
+Aggiornato: 11 novembre 2026 (v24c: terzo round ChatGPT sulla Tabella 6bis.1 — etichette 'surplus operativo lordo e reddito misto', saldo D39−D29 non attribuito con certezza alle rinnovabili, deflatori come indizio non prova, Torrini 'inapplicato non smentito'). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
 
 ## 1. Versione corrente
 
 | | |
 |---|---|
-| File | `paper/working_paper_v24b_RENDITE.docx` / `.pdf` |
-| Pagine | 105 |
-| MD5 | docx `f4620091a6410ce751cc13a06ae794bb` · pdf `6a38242c656273c84a04035579682402` |
+| File | `paper/working_paper_v24c_RENDITE.docx` / `.pdf` |
+| Pagine | 106 |
+| MD5 | docx `4af30e120bbde4b8b61c75398e41c5bf` · pdf `fe5d8b641f8d3588ce79c816972dad0d` |
 | Base | v23b_REVIEWED (106 pp, MD5 docx `b582170b…`), v23 e v22 in `paper/archive/` |
 | Repository | `https://github.com/giovannicarnevali/distribution_italy` — **reso pubblico dall'autore il 9/11** per farlo leggere ai reviewer; il paper in bozza è quindi scaricabile da chiunque |
 
 Storia: v17 triangolazione → v18 replica R → v19 peer review → v20 Kalecki + IRAP → v21_REFEREE2 → v22 TFP/Cambridge → **v23 REVIEWED** (fusione del ramo di luglio + review ChatGPT e Kimi sulla v22).
+
+## 2d. Cosa ha fatto la v24c (11/11) — terzo round ChatGPT
+
+Cinque rilievi, tutti applicati: (1) l'aggregato B1G−D1−D29X39 è "surplus operativo lordo **e reddito misto**" (B2A3G): etichette di tabella, nota e testo corrette, con avvertenza sul reddito misto degli autonomi (rilevante in H); (2) il 20% del VA dell'energia è il **saldo netto D39−D29**, non "gli incentivi alle rinnovabili": i conti per branca non pubblicano D39 (verificato: nama_10_a64 non serve D39/D29 separati); l'attribuzione resta plausibile e **da verificare su GSE** (pendente); (3) i deflatori sono "dinamica compatibile con pressione sui prezzi", non prova di concorrenza né prezzi al consumo; (4) Torrini: "previsione condizionale inapplicata, non smentita"; tolto "come egli stesso giudicava probabile" (p. 29 dice che la tutela della concorrenza ebbe "un ruolo di secondo piano", un'osservazione sul passato, non un giudizio di probabilità); CONTEXT armonizzato; (5) rimosso dal repo il file di errore `ESTAT_nama_10_a64_B2A3G_D29X39_IT.csv`.
 
 ## 2c. Cosa ha fatto la v24b (10/11, sera) — review ChatGPT sulla Tabella 6bis.1
 
@@ -64,7 +68,8 @@ Risposta alle due review esterne della v22 (ChatGPT, 10 rilievi; Kimi, 52 riliev
 | 10 | Paragrafo qualitativo grandi imprese (SIP/Telecom, Pirelli, Ferruzzi, FIAT, IRI): 4-5 fatti con date dall'autore | Autore | Proposta Kimi di giugno |
 | 11 | Formalizzazione delle fasi (saldi settoriali + ciclo elettorale 1980-92; Lotka-Volterra profitti/quasi-rendite 1994-2007) | Autore | Idee dell'autore, non nel paper |
 | 12 | Visibilità del repository (pubblico dal 9/11): decidere se tornare privato dopo le review | Autore | — |
-| 13 | Zenodo/DOI, cover letter, sede | Autore | Bassa |
+| 13 | Verificare l'attribuzione del saldo D39−D29 dell'energia (20% del VA 2014-24) agli incentivi alle rinnovabili: serie D39 per branca (Istat) o Rapporto attività GSE | Autore | Fino ad allora il testo dice "compatibile con" |
+| 14 | Zenodo/DOI, cover letter, sede | Autore | Bassa |
 
 ## 4. File sul PC dell'autore
 
@@ -73,7 +78,7 @@ Cartella `C:\Users\an_om\Documents\Claude\files08062026\`: `working_paper_data.c
 ## 5. Prompt di apertura
 
 **Per Claude (nuova chat)**
-> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24b_RENDITE.docx` (MD5 f4620091…, 105 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
+> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24c_RENDITE.docx` (MD5 4af30e12…, 106 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
 
 **Per un reviewer (ChatGPT, Kimi, DeepSeek)**
-> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24b_RENDITE.pdf`, 105 pagine, MD5 del docx f4620091a6410ce751cc13a06ae794bb: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
+> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24c_RENDITE.pdf`, 106 pagine, MD5 del docx 4af30e120bbde4b8b61c75398e41c5bf: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.

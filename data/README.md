@@ -32,7 +32,7 @@ Un file per serie, Italia 1960-2027 (2025-27 sono previsioni): `AMECO_<CODE>_ITA
 | `ESTAT_nama_10_a64_FULL_all_countries_2026-04.csv.gz` | nama_10_a64 completo, tutti i paesi (36 MB) — **file troncato** (il download di aprile si è interrotto: leggibile solo in parte) | 04/2026 | era usato per il confronto multi-paese del §6bis; da riscaricare se serve |
 | `ESTAT_nama_10_a64_p5_P51G_IT.csv` | nama_10_a64_p5, A.CP_MEUR.<tutte le branche>.<asset10>.P51G.IT | 9/11/2026 | investimenti fissi lordi per branca (investment rate privatizzate, verifica di giugno) |
 | `ESTAT_nama_10_a64_B1G_CLV10_IT.csv` | nama_10_a64, A.CLV10_MEUR.<branche>.B1G.IT | 10/11/2026 | valore aggiunto in volume per branca (Tabella 6bis.1) |
-| `ESTAT_nama_10_a64_D29X39_IT.csv` | nama_10_a64, A.CP_MEUR.C+D+H+J61+K+TOTAL.D29X39.IT | 10/11/2026 | altre imposte meno contributi alla produzione, per il surplus operativo lordo per identità (Tabella 6bis.1) |
+| `ESTAT_nama_10_a64_D29X39_IT.csv` | nama_10_a64, A.CP_MEUR.C+D+H+J61+K+TOTAL.D29X39.IT | 10/11/2026 | altre imposte meno contributi alla produzione (solo il saldo: D29 e D39 separati non sono pubblicati a livello A64), per il surplus operativo lordo e reddito misto per identità (Tabella 6bis.1) |
 | `ESTAT_nama_10_a64_B2A3N_IT.csv` | nama_10_a64, A.CP_MEUR.D.B2A3N.IT | 10/11/2026 | surplus netto energia (controllo) |
 | `ESTAT_nasa_10_nf_tr_B9_IT.csv` | nasa_10_nf_tr, A.CP_MEUR.PAID.B9.S1+S11+S12+S13+S14+S15+S14_S15+S2.IT | 9/11/2026 | saldi settoriali Cripps-Godley 1995-2024 (§7.3, Tabelle 7.1-7.2) |
 
