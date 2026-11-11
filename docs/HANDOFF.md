@@ -1,18 +1,22 @@
 # HANDOFF — stato corrente
 
-Aggiornato: 11 novembre 2026 (v24c: terzo round ChatGPT sulla Tabella 6bis.1 — etichette 'surplus operativo lordo e reddito misto', saldo D39−D29 non attribuito con certezza alle rinnovabili, deflatori come indizio non prova, Torrini 'inapplicato non smentito'). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
+Aggiornato: 11 novembre 2026 (v24d: quarto round ChatGPT, propagazione negli abstract e in Tabella 9.1, Torrini separato da Modiano-Onado in §6bis.5, finanza 36. v24c: terzo round ChatGPT sulla Tabella 6bis.1 — etichette 'surplus operativo lordo e reddito misto', saldo D39−D29 non attribuito con certezza alle rinnovabili, deflatori come indizio non prova, Torrini 'inapplicato non smentito'). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
 
 ## 1. Versione corrente
 
 | | |
 |---|---|
-| File | `paper/working_paper_v24c_RENDITE.docx` / `.pdf` |
+| File | `paper/working_paper_v24d_RENDITE.docx` / `.pdf` |
 | Pagine | 106 |
-| MD5 | docx `4af30e120bbde4b8b61c75398e41c5bf` · pdf `fe5d8b641f8d3588ce79c816972dad0d` |
+| MD5 | docx `a8d017fadd3da4d017129c0ba057f72f` · pdf `5b99325d16e1b75530609a8a751fa58c` |
 | Base | v23b_REVIEWED (106 pp, MD5 docx `b582170b…`), v23 e v22 in `paper/archive/` |
 | Repository | `https://github.com/giovannicarnevali/distribution_italy` — **reso pubblico dall'autore il 9/11** per farlo leggere ai reviewer; il paper in bozza è quindi scaricabile da chiunque |
 
 Storia: v17 triangolazione → v18 replica R → v19 peer review → v20 Kalecki + IRAP → v21_REFEREE2 → v22 TFP/Cambridge → **v23 REVIEWED** (fusione del ramo di luglio + review ChatGPT e Kimi sulla v22).
+
+## 2e. Cosa ha fatto la v24d (11/11) — quarto round ChatGPT (sul PDF)
+
+Quattro rilievi, applicati: abstract IT/EN con "surplus operativo lordo e reddito misto" e "deflatore implicito" al posto di "prezzi"; §6bis.5 attribuisce i profitti non reinvestiti a Modiano-Onado e presenta Torrini separatamente (condivide la rendita trasferita, non il mancato reinvestimento), coerente con §6bis.2; Tabella 9.1 allineata alla cautela di §6bis.3 (saldo D39−D29 da verificare; deflatore implicito, non prezzi); finanza 1995-2000 = 36 ovunque (36,5 nel CSV). Nessun rilievo bloccante.
 
 ## 2d. Cosa ha fatto la v24c (11/11) — terzo round ChatGPT
 
@@ -78,7 +82,7 @@ Cartella `C:\Users\an_om\Documents\Claude\files08062026\`: `working_paper_data.c
 ## 5. Prompt di apertura
 
 **Per Claude (nuova chat)**
-> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24c_RENDITE.docx` (MD5 4af30e12…, 106 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
+> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24d_RENDITE.docx` (MD5 a8d017fa…, 106 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
 
 **Per un reviewer (ChatGPT, Kimi, DeepSeek)**
-> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24c_RENDITE.pdf`, 106 pagine, MD5 del docx 4af30e120bbde4b8b61c75398e41c5bf: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
+> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24d_RENDITE.pdf`, 106 pagine, MD5 del docx a8d017fadd3da4d017129c0ba057f72f: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
