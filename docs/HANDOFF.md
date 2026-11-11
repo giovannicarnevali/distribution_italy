@@ -1,14 +1,14 @@
 # HANDOFF — stato corrente
 
-Aggiornato: 11 novembre 2026 (v24h: tolte le 6 menzioni residue del DiD fra i metodi — abstract IT/EN, §5.7, nota metodologica. v24g: rilettura mirata Kimi sulla v24f — 10 rilievi applicati — e passata del separatore decimale (548 conversioni, 115 esclusioni documentate). v24f: §8.6.1 dichiara algoritmo/avvio delle due soluzioni SCM e l'invarianza delle conclusioni inferenziali, su richiesta Kimi. v24e: review Kimi sulla v24c con replica indipendente della Tabella 6bis.1 al decimo di punto; SCM originale vs replica dichiarati; telecom 1,9→0,8 datati. v24d: quarto round ChatGPT, propagazione negli abstract e in Tabella 9.1, Torrini separato da Modiano-Onado in §6bis.5, finanza 36. v24c: terzo round ChatGPT sulla Tabella 6bis.1 — etichette 'surplus operativo lordo e reddito misto', saldo D39−D29 non attribuito con certezza alle rinnovabili, deflatori come indizio non prova, Torrini 'inapplicato non smentito'). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
+Aggiornato: 11 novembre 2026 (v24i: due residui ChatGPT — §8.1 richiamo al DiD sostituito dal confronto per branca, §6.3.1 rinvio §6bis.6→§6bis.5. v24h: tolte le 6 menzioni residue del DiD fra i metodi — abstract IT/EN, §5.7, nota metodologica. v24g: rilettura mirata Kimi sulla v24f — 10 rilievi applicati — e passata del separatore decimale (548 conversioni, 115 esclusioni documentate). v24f: §8.6.1 dichiara algoritmo/avvio delle due soluzioni SCM e l'invarianza delle conclusioni inferenziali, su richiesta Kimi. v24e: review Kimi sulla v24c con replica indipendente della Tabella 6bis.1 al decimo di punto; SCM originale vs replica dichiarati; telecom 1,9→0,8 datati. v24d: quarto round ChatGPT, propagazione negli abstract e in Tabella 9.1, Torrini separato da Modiano-Onado in §6bis.5, finanza 36. v24c: terzo round ChatGPT sulla Tabella 6bis.1 — etichette 'surplus operativo lordo e reddito misto', saldo D39−D29 non attribuito con certezza alle rinnovabili, deflatori come indizio non prova, Torrini 'inapplicato non smentito'). Si legge dopo `CONTEXT.md`. Contiene solo ciò che cambia: versione, ultime modifiche, pendenti, prompt di apertura.
 
 ## 1. Versione corrente
 
 | | |
 |---|---|
-| File | `paper/working_paper_v24h_RENDITE.docx` / `.pdf` |
+| File | `paper/working_paper_v24i_RENDITE.docx` / `.pdf` |
 | Pagine | 106 |
-| MD5 | docx `487558085c5162712d41ff8fce5b5f87` · pdf `6da09bc827e050fbbcab4d42bd2edad4` |
+| MD5 | docx `1edf5cd9b37ef97d424beb0bdf3f1536` · pdf `ff83df3bf674088dc71e2dbc036c2f70` |
 | Base | v23b_REVIEWED (106 pp, MD5 docx `b582170b…`), v23 e v22 in `paper/archive/` |
 | Repository | `https://github.com/giovannicarnevali/distribution_italy` — **reso pubblico dall'autore il 9/11** per farlo leggere ai reviewer; il paper in bozza è quindi scaricabile da chiunque |
 
@@ -92,7 +92,7 @@ Cartella `C:\Users\an_om\Documents\Claude\files08062026\`: `working_paper_data.c
 ## 5. Prompt di apertura
 
 **Per Claude (nuova chat)**
-> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24h_RENDITE.docx` (MD5 48755808…, 106 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
+> Leggi docs/CONTEXT.md, docs/HANDOFF.md e docs/COLLABORATION.md nel repository distribution_italy. Lavoriamo su `paper/working_paper_v24i_RENDITE.docx` (MD5 1edf5cd9…, 106 pp): verifica di avere questa versione. Pendenti aperti in HANDOFF §3. Oggi: [compito].
 
 **Per un reviewer (ChatGPT, Kimi, DeepSeek)**
-> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24h_RENDITE.pdf`, 106 pagine, MD5 del docx 487558085c5162712d41ff8fce5b5f87: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
+> Sei peer reviewer esterno di questo working paper. Leggi prima docs/CONTEXT.md (§7 convenzioni, §8 decisioni chiuse, §9 trappole) e docs/COLLABORATION.md §3 per il formato. Il file è `paper/working_paper_v24i_RENDITE.pdf`, 106 pagine, MD5 del docx 1edf5cd9b37ef97d424beb0bdf3f1536: conferma la versione citando il titolo di §6bis.3 e il quarto risultato dell'abstract. Compito: [es. verificare che le correzioni elencate in HANDOFF §2 siano state applicate e non abbiano introdotto nuove incoerenze; rileggere §4.2, §5.5, §5bis.2, §8.6.1]. Non riscrivere, non riaprire le decisioni chiuse senza argomenti nuovi, segnala ciò che non puoi verificare.
